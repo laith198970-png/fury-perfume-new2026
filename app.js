@@ -1,4 +1,4 @@
-// ضع Project URL و publishable/anon key من Supabase بعد إعداد المشروع.
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9hbWhhb3dzaHhta2Rzd2Nmcm9lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI1MDkzNTcsImV4cCI6MjEwODA4NTM1N30.mXDgfOeX0DPYQE5AN-ZHlwP2JdQuuGDOOnxA0ppzwRo
 // لا تضع كلمة مرور قاعدة البيانات أو service_role key هنا.
 const SUPABASE_URL = "https://oamhaowshxmkdswcfroe.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_9MvB2kiLiGHzr1wezguF6g_sAZO4HiQ";
