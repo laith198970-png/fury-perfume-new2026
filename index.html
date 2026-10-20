@@ -1,1 +1,58 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FURY PERFUME</title><link rel="stylesheet" href="style.css"></head><body><header><h1>FURY <span>PERFUME</span></h1><p>عطور مركّزة مختارة بعناية</p><a href="#catalog">تصفّح العطور</a></header><main><section class="intro"><h2>اختَر عطرك المميّز</h2><p>تصفّح العطور واطلب مباشرة عبر واتساب</p><input id="search" placeholder="ابحث عن عطر..."></section><section id="catalog"><h2>العطور المتوفرة</h2><div id="products" class="products"></div></section></main><footer>FURY PERFUME — بغداد، العراق</footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#03100e">
+<title>FURY PERFUME | عطور مركزة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><img src="logo.png" alt="شعار FURY PERFUME"><span><b>FURY</b><small>PERFUME</small></span></a>
+  <nav><a href="#catalog">العطور</a><a href="#notes">النوتات</a><a href="#about">عنّا</a></nav>
+  <button id="adminOpen" class="admin-open">إدارة المتجر <span>↗</span></button>
+</header>
+<main id="home">
+<section class="hero">
+  <div class="hero-backdrop"></div>
+  <div class="hero-copy">
+    <p class="eyebrow"><span></span> FURY PERFUME · عطور مركزة</p>
+    <h1>عطرك يحچي<br><em>عن شخصيتك.</em></h1>
+    <p class="hero-text">روائح مختارة بعناية، حضور يبقى، وتفاصيل عطرية تميّزك من أول نفحة.</p>
+    <div class="hero-actions"><a class="btn-main" href="#catalog">اكتشف العطور <b>←</b></a><a class="text-link" href="#notes">اكتشف النوتات</a></div>
+    <div class="hero-points"><span>✦ جودة مركزة</span><span>✦ أحجام متعددة</span><span>✦ طلب مباشر</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="aura"></div><div class="hero-bottle"><div class="bottle-cap"></div><div class="bottle-neck"></div><div class="bottle-glass"><div class="bottle-shine"></div><div class="bottle-label"><img src="logo.png" alt=""><b>FURY</b><small>PERFUME</small></div></div></div>
+    <div class="floating-note note-amber">عنبر <span>✦</span></div><div class="floating-note note-wood">أخشاب <span>✦</span></div>
+    <div class="hero-ring"></div>
+  </div>
+</section>
+<section id="notes" class="notes-strip">
+  <div><span class="note-icon">✿</span><b>زهريّة</b><small>نفحات ناعمة وأنيقة</small></div>
+  <div><span class="note-icon">◉</span><b>حمضيّات</b><small>انتعاش وحيوية</small></div>
+  <div><span class="note-icon">♨</span><b>أخشاب</b><small>عمق وثبات</small></div>
+  <div><span class="note-icon">✧</span><b>عنبر ومسك</b><small>دفء ولمسة مميزة</small></div>
+</section>
+<section class="catalog section" id="catalog">
+  <div class="section-head"><div><p class="eyebrow">اختيارات FURY</p><h2>الأكثر <em>تميّزاً</em></h2></div><p>اختار العطر والحجم المناسب إلك، واطلبه مباشرة عبر واتساب.</p></div>
+  <div class="filters"><label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="ابحث عن اسم العطر..."></label><select id="sizeFilter"><option value="">كل الأحجام</option><option value="5">5 مل</option><option value="10">10 مل</option><option value="35">35 مل</option><option value="60">60 مل</option><option value="100">100 مل</option></select></div>
+  <div id="productGrid" class="product-grid"></div><p id="emptyState" class="empty hidden">ما لقينا عطر يطابق البحث.</p>
+</section>
+<section class="brand-story section" id="about">
+  <div class="story-logo"><img src="logo.png" alt="شعار FURY PERFUME"></div>
+  <div><p class="eyebrow">رائحة لها هوية</p><h2>التفاصيل تصنع <em>الفرق.</em></h2><p>FURY PERFUME — عطور مركزة مستوحاة من جمال الزهور، انتعاش الحمضيات، عمق الأخشاب ودفء العنبر والمسك. اختار نوتتك المفضلة وخلي عطرك يحچي عنك.</p><a class="text-link" href="#catalog">تصفّح المجموعة ←</a></div>
+</section>
+</main>
+<footer><a class="footer-brand" href="#home"><img src="logo.png" alt=""><span><b>FURY PERFUME</b><small>عطور مركزة</small></span></a><span>© FURY PERFUME — جميع الحقوق محفوظة</span><a href="#home">للأعلى ↑</a></footer>
+
+<dialog id="adminDialog" class="admin-dialog">
+ <div class="dialog-head"><div><p class="eyebrow">منطقة خاصة</p><h2>إدارة <em>المتجر</em></h2></div><button id="closeAdmin" class="close" aria-label="إغلاق">×</button></div>
+ <div id="setupNotice" class="notice">يلزم ربط هذا الموقع بمشروع Supabase وإنشاء جدول المنتجات أولاً. التعليمات موجودة في SETUP_AR.txt داخل الحزمة.</div>
+ <form id="loginForm" class="form-stack"><label>البريد الإلكتروني<input id="adminEmail" type="email" placeholder="بريد حساب الإدارة" required></label><label>كلمة المرور<input id="adminPassword" type="password" required></label><button class="btn-main" type="submit">تسجيل الدخول</button><p id="loginMessage" class="message"></p></form>
+ <section id="adminPanel" class="hidden"><div class="admin-bar"><h3>منتجات المتجر</h3><button id="logoutBtn" class="admin-open">تسجيل خروج</button></div>
+ <form id="productForm" class="form-stack"><input id="productId" type="hidden"><label>اسم العطر<input id="productName" required maxlength="100"></label><label>النوتات / الوصف<input id="productNotes" maxlength="240" placeholder="مثال: أخشاب، عنبر ومسك"></label><label>رابط صورة المنتج (اختياري)<input id="productImage" type="url" placeholder="https://..."></label><div class="price-fields"><label>5 مل<input id="price5" type="number" min="0"></label><label>10 مل<input id="price10" type="number" min="0"></label><label>35 مل<input id="price35" type="number" min="0"></label><label>60 مل<input id="price60" type="number" min="0"></label><label>100 مل<input id="price100" type="number" min="0"></label></div><div class="form-buttons"><button class="btn-main" type="submit">حفظ المنتج</button><button id="cancelEdit" class="admin-open" type="button">إلغاء</button></div><p id="productMessage" class="message"></p></form><div id="adminProducts" class="admin-products"></div>
+ </section>
+</dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
+</body></html>
