@@ -1,7 +1,7 @@
 // ضع Project URL و publishable/anon key من Supabase بعد إعداد المشروع.
 // لا تضع كلمة مرور قاعدة البيانات أو service_role key هنا.
-const SUPABASE_URL = "PASTE_SUPABASE_PROJECT_URL_HERE";
-const SUPABASE_ANON_KEY = "PASTE_SUPABASE_ANON_KEY_HERE";
+const SUPABASE_URL = "https://oamhaowshxmkdswcfroe.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "sb_publishable_9MvB2kiLiGHzr1wezguF6g_sAZO4HiQ";
 const WHATSAPP_NUMBER = "9647733551257"; // رقم المتجر بصيغة دولية دون +
 const DEFAULT_PRICES = {5:2000,10:4000,35:10000,60:20000,100:35000};
 const DEMO_PRODUCTS = [
